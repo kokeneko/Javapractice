@@ -10,28 +10,34 @@ import java.util.StringTokenizer;
 public class PokeData {
 	String type1, type2;
 
-	public PokeData pokedata(String poke) {
+	public PokeData pokedata(String poke) { //ポケモンの名前を渡すとPokemonData.txtからタイプを返す
 		PokeData poketype = new PokeData();
+		AddPoke ap = new AddPoke();
 
 		try {
 			File file = new File(".\\src\\battle\\PokemonData.txt");
 			FileReader fr = new FileReader(file);
 			BufferedReader br = new BufferedReader(fr);
-			String str = br.readLine();
+			String name = null;
 
-			//do {
+			do {
+				String str = br.readLine();
+
+				if(str == null) {
+					ap.write(poke);
+					str = br.readLine();
+				}
+
 				StringTokenizer st = new StringTokenizer(str, ",");
-				String name = st.nextToken();
+				name = st.nextToken();
 				poketype.type1 = st.nextToken();
 				poketype.type2 = st.nextToken();
 
-				System.out.println(name + poketype.type1 + poketype.type2);
+				//if(poketype.type1 == null)
 
-					//if() {
-					//	hogege
-					//}
+			}while(!poke.equals(name));
 
-			//}while(!poke.equals(name));
+			//System.out.println(name + poketype.type1 + poketype.type2);
 
 
 			br.close();

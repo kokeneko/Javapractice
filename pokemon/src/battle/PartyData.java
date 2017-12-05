@@ -1,20 +1,16 @@
 package battle;
 
-import java.util.Scanner;
-
 public class PartyData {
 
-	public void partyscan(String[] party) {
-		Scanner scan = new Scanner(System.in);
+	public void partyscan(String[] party) { //配列[6]を渡すとパーティ入力
 
 		for(int i = 0;i < 6;i++) {
-			System.out.print("ポケモン" + (i + 1) + ":");
-			party[i] = scan.next();
+			System.out.print("ポケモン" + (i + 1) + ":\n");
+			party[i] = Main.scan.next();
 		}
-		scan.close();
 	}
 
-	public void partyshow(String[] party) {
+	public void partyshow(String[] party) { //配列[6]を渡すと表示する
 		for(int i = 0;i < 6;i++) {
 			System.out.println(party[i]);
 		}
