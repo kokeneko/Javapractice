@@ -33,8 +33,6 @@ public class PokeData {
 				poketype.type1 = st.nextToken();
 				poketype.type2 = st.nextToken();
 
-				//if(poketype.type1 == null)
-
 			}while(!poke.equals(name));
 
 			//System.out.println(name + poketype.type1 + poketype.type2);

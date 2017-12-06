@@ -35,13 +35,13 @@ public class TypeEffect {
 					currentrate[j] *= rate[i][j];
 				}
 			}
-			if(type2 == "なし") {
-				currentrate[j] *= 2;
+			if(type2.equals("なし")) {
+				currentrate[i] *= 2;
 			}
 		}
 
 		for(int i = 0;i < 18;i++) {
-			System.out.print(Atype[i] + ":");
+			System.out.print(Atype[i] + currentrate[i] + ":");
 
 			switch(currentrate[i]) {
 			case 0 : System.out.println("1/4倍いまひとつ"); break;
