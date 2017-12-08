@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TypeEffect.PokeTypeController">
+   <children>
+      <Label layoutX="34.0" layoutY="20.0" text="相手パーティ" />
+      <Label layoutX="9.0" layoutY="59.0" text="1" />
+      <Label layoutX="9.0" layoutY="98.0" text="2" />
+      <Label layoutX="9.0" layoutY="137.0" text="3" />
+      <Label layoutX="9.0" layoutY="176.0" text="4" />
+      <Label layoutX="9.0" layoutY="215.0" text="5" />
+      <Label layoutX="9.0" layoutY="254.0" text="6" />
+      <TextField fx:id="Poke1" layoutX="20.0" layoutY="53.0" prefHeight="39.0" prefWidth="111.0" />
+      <TextField fx:id="Poke2" layoutX="20.0" layoutY="92.0" prefHeight="39.0" prefWidth="111.0" />
+      <TextField fx:id="Poke3" layoutX="20.0" layoutY="131.0" prefHeight="39.0" prefWidth="111.0" />
+      <TextField fx:id="Poke4" layoutX="20.0" layoutY="170.0" prefHeight="39.0" prefWidth="111.0" />
+      <TextField fx:id="Poke5" layoutX="20.0" layoutY="209.0" prefHeight="39.0" prefWidth="111.0" />
+      <TextField fx:id="Poke6" layoutX="20.0" layoutY="248.0" prefHeight="39.0" prefWidth="111.0" />
+      <Button fx:id="ImportButton" layoutX="22.0" layoutY="287.0" mnemonicParsing="false" onAction="#ImportPoke" text="パーティ確定" />
+      <TextField fx:id="Poke1Type1" layoutX="182.0" layoutY="53.0" prefHeight="39.0" prefWidth="78.0" />
+      <TextField fx:id="Poke1Type2" layoutX="260.0" layoutY="53.0" prefHeight="39.0" prefWidth="78.0" />
+      <TextField fx:id="Poke2Type1" layoutX="182.0" layoutY="92.0" prefHeight="39.0" prefWidth="78.0" />
+      <TextField fx:id="Poke2Type2" layoutX="260.0" layoutY="92.0" prefHeight="39.0" prefWidth="78.0" />
+      <TextField fx:id="Poke3Type1" layoutX="182.0" layoutY="131.0" prefHeight="39.0" prefWidth="78.0" />
+      <TextField fx:id="Poke3Type2" layoutX="260.0" layoutY="131.0" prefHeight="39.0" prefWidth="78.0" />
+      <TextField fx:id="Poke4Type1" layoutX="182.0" layoutY="170.0" prefHeight="39.0" prefWidth="78.0" />
+      <TextField fx:id="Poke4Type2" layoutX="260.0" layoutY="170.0" prefHeight="39.0" prefWidth="78.0" />
+      <TextField fx:id="Poke5Type1" layoutX="182.0" layoutY="209.0" prefHeight="39.0" prefWidth="78.0" />
+      <TextField fx:id="Poke5Type2" layoutX="260.0" layoutY="209.0" prefHeight="39.0" prefWidth="78.0" />
+      <TextField fx:id="Poke6Type1" layoutX="182.0" layoutY="248.0" prefHeight="39.0" prefWidth="78.0" />
+      <TextField fx:id="Poke6Type2" layoutX="260.0" layoutY="248.0" prefHeight="39.0" prefWidth="78.0" />
+      <Label layoutX="196.0" layoutY="20.0" text="タイプ1" />
+      <Label layoutX="274.0" layoutY="20.0" text="タイプ2" />
+      <Label layoutX="172.0" layoutY="299.0" text="ダメージ効率の高いタイプ" />
+      <TextField fx:id="EffectiveType" layoutX="148.0" layoutY="326.0" />
+   </children>
+</AnchorPane>

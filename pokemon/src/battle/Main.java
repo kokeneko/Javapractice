@@ -42,6 +42,9 @@ public class Main {
 				maxrate = partyrate[i];
 			}
 		}
+
+		System.out.println("最もダメージ効率の良いタイプは");
+
 		for(int i = 0;i < 18;i++) {
 			if(maxrate == partyrate[i])
 				System.out.println(Effect.Atype[i]);
