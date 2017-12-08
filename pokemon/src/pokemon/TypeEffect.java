@@ -44,7 +44,8 @@ public class TypeEffect {
 			System.out.print(Atype[i] + currentrate[i] + ":");
 
 			switch(currentrate[i]) {
-			case 0 : System.out.println("1/4倍いまひとつ"); break;
+			case 0 : System.out.println("効果なし");
+			case 1 : System.out.println("1/4倍いまひとつ"); break;
 			case 2 : System.out.println("1/2倍いまひとつ"); break;
 			case 4 : System.out.println("ふつう"); break;
 			case 8 : System.out.println("2倍ばつぐん"); break;
